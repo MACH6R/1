@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchneeHenry 😇</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('scary.jpg');  /*https://media.istockphoto.com/id/146746272/photo/happy-child.jpg?s=612x612&w=0&k=20&c=Gs9N1pyFHvbMqa9wWoRqxoBO_P_ie4vUYCxSi0bSKxs=*/
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio id="scream" src="https://voca.ro/1aeI9kYYpcDE"></audio>
+    <img id="scaryImage" src="scary.jpg" alt="DUHURENSOHGNHAHAHAHAHAHA!!!">
+    
+    <script>
+        window.onload = function() {
+            document.getElementById("scaryImage").style.display = "block"; // Bild anzeigen
+            document.getElementById("scream").play(); // Ton abspielen
+        };
+    </script>
+</body>
+</html>
